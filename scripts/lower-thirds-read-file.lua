@@ -35,7 +35,7 @@ function urlencode(url)
 end
 
 function changeUrl()
-	local url = "https://obs.infor-r.com/lower"
+	local url = "file://C:/Users/MediaTeam/Documents/html/lower.html"
 	local lines = string.split(file_lines[line_number], "|")
 	local template = default_template
 	local line1 = ""

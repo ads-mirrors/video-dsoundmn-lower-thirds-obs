@@ -14,7 +14,7 @@ function preview() {
 	
 	console.log('Id: ' + id + ' Line1: ' + line1 + ' Color: ' + color1 + ' Line2: ' + line2 + ' Color: ' + color2);
 	
-	var url = '/lower?id=' + id;
+	var url = '/lower.html?id=' + id;
 
 	if (line1 !== '') {
 		url += '&line1=' + encodeURI(line1);
@@ -29,9 +29,9 @@ function preview() {
 		url += '&color2=' + color2;
 	}
 	
-	document.getElementsByTagName('iframe')[0].src = url;
-	document.getElementById('url').innerHTML = 'https://obs.infor-r.com' + url;
-	document.getElementById('hiddenURL').value = 'https://obs.infor-r.com' + url;
+	document.getElementsByTagName('iframe')[0].src = 'file://C:/Users/MediaTeam/Documents/html' + url;
+	document.getElementById('url').innerHTML = 'file://C:/Users/MediaTeam/Documents/html' + url;
+	document.getElementById('hiddenURL').value = 'file://C:/Users/MediaTeam/Documents/html' + url;
 }
 
 function changeColorPicker(element, color) {

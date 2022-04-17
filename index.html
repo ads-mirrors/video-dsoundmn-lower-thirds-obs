@@ -6,7 +6,7 @@
 	  content="minimum-scale=1, initial-scale=1, width=device-width"
 	/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<link rel="stylesheet" href="./css/site.css">
@@ -14,15 +14,6 @@
 	<link rel="stylesheet" href="./css/getmdl-select/getmdl-select.min.css">
 	<script defer src="./js/getmdl-select/getmdl-select.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31032890-10"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-31032890-10');
-	</script>
 </head>
 <body>
 	<!-- Colored FAB button with ripple -->
@@ -53,8 +44,8 @@
 					<div>
 						<p>Lower thirds for OBS Studio using HTML, Javascript and CSS.</p>
 						<p>This project is based on After Effects template by Amaksi <a href="http://videohive.net/item/lower-thirds/10338608">http://videohive.net/item/lower-thirds/10338608</a>, and Matt Chestnut <a href="https://codepen.io/mattchestnut/pen/dMrONe">https://codepen.io/mattchestnut/pen/dMrONe</a>.</p>
-						<p>Can customize the lower thirds on url via parameters. For example: https://obs.infor-r.com/lower?id=3&line1=OBS&color1=ffffff&line2=Studio&color2=cf4c4e</p>
-						<p><img src="./img/example.gif"></p>
+						<p>Can customize the lower thirds on url via parameters. For example: file:///C:/Users/MediaTeam/Documents/html/lower.html?id=3&line1=OBS&color1=ffffff&line2=Studio&color2=cf4c4e</p>
+						<p><img src="/img/example.gif"></p>
 						<p><small>Note: Source code on <a href="https://github.com/vjccruz/lower-thirds-obs">Github</a> page.</small></p>
 					</div>
 				</section>
@@ -196,13 +187,13 @@
 					<div class="mdl-grid">
 						<div class="mdl-cell mdl-cell--6-col">
 							<div class="mdl-textfield mdl-textfield-full-width mdl-js-textfield mdl-textfield--floating-label">
-								<input class="mdl-textfield__input" type="text" id="line1">
+								<input class="mdl-textfield__input" type="text" id="line1" value="Pastor Ernest Fink">
 								<label class="mdl-textfield__label" for="line1">Line 1</label>
 							</div>
 						</div>
 						<div class="mdl-cell mdl-cell--6-col">
 							<div class="mdl-textfield mdl-textfield-full-width mdl-js-textfield mdl-textfield--floating-label">
-								<input class="mdl-textfield__input" type="text" id="line2">
+								<input class="mdl-textfield__input" type="text" id="line2" value="Sermon Title">
 								<label class="mdl-textfield__label" for="line2">Line 2</label>
 							</div>
 						</div>
@@ -217,10 +208,10 @@
 						</div>
 						<div class="mdl-cell mdl-cell--6-col">
 							<div class="mdl-textfield mdl-textfield-color mdl-js-textfield mdl-textfield--floating-label">
-								<input onkeyup="changeColorPicker(this, 'colorpicker1')" class="mdl-textfield__input" type="text" value="#cf4c4e" id="color2">
+								<input onkeyup="changeColorPicker(this, 'colorpicker2')" class="mdl-textfield__input" type="text" value="#ff5900" id="color2">
 								<label class="mdl-textfield__label" for="color2">Color for second element</label>
 							</div>
-							<input type="color" value="#cf4c4e" class="mdl-colorpicker" id="colorpicker2" onchange="changeColorPicker(this, 'color2')">
+							<input type="color" value="#ff5900" class="mdl-colorpicker" id="colorpicker2" onchange="changeColorPicker(this, 'color2')">
 						</div>
 					</div>
 					<div class="mdl-grid">
@@ -236,15 +227,15 @@
 								URL
 							</div>
 							<!-- mdl-textfield--floating-label is-dirty mdl-textfield__label -->
-							<div onclick="clickToCopy(this)" id="url">https://obs.infor-r.com/lower</div>
+							<div onclick="clickToCopy(this)" id="url">file:///C:/Users/MediaTeam/Documents/html/lower.html</div>
 							<div id="urlTooltip" class="mdl-tooltip" data-mdl-for="url">
 								click to copy
 							</div>
-							<input type="text" style="position:absolute;top:-200px;" id="hiddenURL" value="https://obs.infor-r.com/lower">
+							<input type="text" style="position:absolute;top:-200px;" id="hiddenURL" value="file:///C:/Users/MediaTeam/Documents/html/lower.html">
 						</div>
 					</div>
 					<div class="iframe">
-						<iframe src="/lower?id=1"></iframe>
+						<iframe src="file:///C:/Users/MediaTeam/Documents/html/lower.html?id=1"></iframe>
 					</div>
 				</section>
 			</div>
