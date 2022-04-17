@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
 body {
   margin: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 main {
@@ -94,7 +94,7 @@ main {
 #animation-1 > div:first-child {
   font-size: 5em;
   top: -.15em;
-  animation: 4s cubic-bezier(0.19, 0.76, 0.32, 1) infinite alternate both animation-1-slash;
+  animation: 15s cubic-bezier(0.19, 0.76, 0.32, 1) infinite alternate both animation-1-slash;
   -webkit-animation-iteration-count: 2;
 }
 #animation-1 > div:nth-child(2), #animation-1 > div:nth-child(3) {
@@ -103,7 +103,7 @@ main {
   width: 100%;
 }
 #animation-1 > div:nth-child(2) div, #animation-1 > div:nth-child(3) div {
-  animation: 4s cubic-bezier(0.19, 0.76, 0.32, 1) infinite alternate both;
+  animation: 15s cubic-bezier(0.19, 0.76, 0.32, 1) infinite alternate both;
   -webkit-animation-iteration-count: 2;
 }
 #animation-1 div:nth-child(2) {
@@ -162,14 +162,14 @@ main {
   font-size: 2.8em;
 }
 #animation-2 > div:first-child div {
-  animation: 3s ease-out infinite alternate both animation-2-name;
+  animation: 10s ease-out infinite alternate both animation-2-name;
   -webkit-animation-iteration-count: 2;
 }
 #animation-2 > div:last-child {
   font-size: 1.1em;
 }
 #animation-2 > div:last-child div {
-  animation: 3s ease-out infinite alternate both animation-2-title;
+  animation: 10s ease-out infinite alternate both animation-2-title;
   -webkit-animation-iteration-count: 2;
 }
 
@@ -183,7 +183,7 @@ main {
   30% {
     transform: translate3d(100%, 0, 0);
   }
-  60% {
+  60%,100%,100%,100%,100%,100%,100% {
     transform: translate3d(0, 0, 0);
   }
 }
@@ -194,7 +194,7 @@ main {
   30% {
     transform: translate3d(-100%, 0, 0);
   }
-  60% {
+  60%,100%,100%,100%,100%,100%,100% {
     transform: translate3d(0, 0, 0);
   }
 }
@@ -209,7 +209,7 @@ main {
   letter-spacing: 1px;
 }
 #animation-3 > div:first-child div {
-  animation: 3.2s ease-out infinite alternate both animation-3-left;
+  animation: 8s ease-out infinite alternate both animation-3-left;
   -webkit-animation-iteration-count: 2;
 }
 #animation-3 > div:last-child {
@@ -218,8 +218,9 @@ main {
   letter-spacing: -1px;
 }
 #animation-3 > div:last-child div {
-  animation: 3.2s ease-out infinite alternate both animation-3-right;
+  animation: 8s ease-out infinite alternate both animation-3-right;
   -webkit-animation-iteration-count: 2;
+  margin-left: 0.5em;
 }
 
 /*********************
@@ -252,7 +253,7 @@ main {
   vertical-align: middle;
 }
 #animation-4 > div div {
-  animation: 3s ease-out infinite alternate both;
+  animation: 10s ease-out infinite alternate both;
   -webkit-animation-iteration-count: 2;
 }
 #animation-4 > div:first-child {
@@ -348,7 +349,7 @@ main {
 }
 #animation-5 div,
 #animation-5 .clip-path {
-  animation: 3.1s ease-out infinite alternate both;
+  animation: 10s ease-out infinite alternate both;
   -webkit-animation-iteration-count: 2;
 }
 #animation-5 .bottom-right,
